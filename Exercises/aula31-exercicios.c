@@ -12,6 +12,7 @@ int ataque1, ataque2, defesa1, defesa2, recuo1, recuo2;
 //Gerar número aleatório
 
 srand(time(0));
+rand () % 100 + 1;
 ataque1 = 1;
 ataque2 = 0;
 defesa1 = 1;
@@ -62,7 +63,7 @@ scanf("%c", &segundoatributo);
 if(primeiroatributo == segundoatributo){
     printf("Você escolheu o mesmo atributo.\n");
 } else {
-    switch(segundoatributo){
+        switch(segundoatributo){
         case 'A':
         case 'a':
             printf("Você escolheu opção Ataque\n");
@@ -77,11 +78,12 @@ if(primeiroatributo == segundoatributo){
         case 'r':
             printf("Você escolheu opção Recuo\n");
             resultado2 = recuo1 > recuo2 ? 1 : 0;
-    break;  
-    default: 
-        printf("Operação inválida.\n");
-    break;   
+        break;  
+        default: 
+            printf("Operação inválida.\n");
+        break;   
     }
+}
 
 if ( resultado1 && resultado2){
     printf("Você venceu!\n");
@@ -90,11 +92,6 @@ if ( resultado1 && resultado2){
 } else {
     printf("Você perdeu\n");
 }
-
-
-
-}
-
 
 return 0;
 }
