@@ -82,6 +82,19 @@ do { //Execução do bloco switch pelo menos uma vez.
         }
     } while (option != 3 && option !=2 && option !=1); // Enquanto o usuário escolher um valor diferente de 1-2-3, o "menu" repete.
 
+//LOOP FOR:
+
+    for (int c = 0; c<=5; c++){ //Inicialização: c = 0; condição: c>=5; incremento: c++
+	printf("%d", c);//Saída de dados
+
+    // O loop ocorre até que a condição é falsa.
+} 
+
+for (int i = 1; i <= 20; i++) {
+        if (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+    }
 
     return 0;
 }
