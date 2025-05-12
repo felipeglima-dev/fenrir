@@ -55,7 +55,32 @@ do {
    
     printf("Número negativo detectado. Saindo...\n");
 
+//Exemplo de estrutura DO-WHILE com menus interativos
 
+int option;
+
+do { //Execução do bloco switch pelo menos uma vez.
+        printf("Menu:\n");
+        printf("1. Opção 1\n");
+        printf("2. Opção 2\n");
+        printf("3. Sair\n");
+        printf("Escolha uma opção: \n");
+        scanf("%d", &option);
+       
+        switch(option) {
+            case 1:
+                printf("Você escolheu a opção 1\n");
+                break;
+            case 2:
+                printf("Você escolheu a opção 2\n");
+                break;
+            case 3:
+                printf("Saindo...\n");
+                break;
+            default:
+                printf("Opção inválida!\n");
+        }
+    } while (option != 3 && option !=2 && option !=1); // Enquanto o usuário escolher um valor diferente de 1-2-3, o "menu" repete.
 
 
     return 0;
